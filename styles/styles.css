@@ -7,7 +7,6 @@ html, body {
 
 
 /* i got the font- family from font-family: 'Yeon Sung', cursive;  */
-
 .profile-pic {
     margin: 2.5em;
     border-style: none;
@@ -18,11 +17,11 @@ html, body {
 }
 
 /* tranforming my pics code was gotten from https://developer.mozilla.org/en-US/docs/Web/CSS/transform*/
-
 .nav-bar {
     display: flex;
     height: 20%;
 }
+
 /*background colour and positioning of the left side of the navigation bar*/
 .navbar-left{
 flex-basis: 20%;
@@ -111,19 +110,13 @@ p {
 a{
     color: lightyellow;
     text-decoration: none;
-    padding: 0.5rem;
-    margin-bottom: 2%;
+    
 }
 
 
 
 
 /*start of portfolio*/
-
-* {
-    margin:0;
-    padding:0;
-    }
 
 .portfolio-header {
     text-align: center;
@@ -133,7 +126,7 @@ a{
 
 /*the s[acing and border used in this code as container for furture purposes*/
 hr {
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0, 0,0, 0.1);
@@ -161,10 +154,8 @@ hr {
  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   grid-auto-rows: minmax(150px, auto); 
   grid-gap: 15px;
-  
-
 }
-
+/*img adjustment*/
 .gallery_img{
     width: 100%;
     height: auto;
@@ -410,7 +401,7 @@ and i changed the code to make it what was morderned and eye appealing*/
 .btn-block{
     margin: 1em;
 }
-/*similar footer for portfolio and cv*/
+/*similar footer for index, contacts, portfolio and cv*/
 .footer{
     position: static;
     bottom: 0;

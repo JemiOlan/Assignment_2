@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c2563d8890.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="styles/styles.css"> <!--link to access css-->
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"> <!--font type gotten from goodle-->
+    <script src="https://kit.fontawesome.com/c2563d8890.js" crossorigin="anonymous"></script>  <!--font awesome api to access to use the font-->
 
 <!--gotten from google font,https://fonts.google.com/specimen/Yeon+Sung?selection.family=Yeon+Sung-->
 
 </head>
-<!--I have linked the portfolio to the Index.html and i got inspiration on how to do this from week 6 challenge-->
+<!--I have linked the portfolio to the Index.html and i got inspiration on how to do this from week 6 challenge imn semester1-->
 <body>
 
 <div class="nav-bar">
@@ -33,24 +33,25 @@
    <h1 class="portfolio-header">My Portfolio</h1> 
 <hr>
 <!--doing my grid with class code as well as https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/-->
-    <div class="gallery">
+<!--the portfolio links to past class js works from  image 1 to 3. it links up to my github and 4-6 for future works-->  
+<div class="gallery">
         <div class="gallery-item">
-        <img src="images/jason-leung-Xaanw0s0pMk-unsplash_background.jpg" class="gallery_img" alt="placeholder image">
+        <a class="gallery_img" href="https://github.com/JemiOlan/todo_listnew"> <img src="images/todolist.JPG" class="gallery_img" alt="placeholder image"> </a>
         <div class="middle">
         <div class="text"> Project one </div>
         </div>
         </div>
 
         <div class="gallery-item">
-        <img src="images/jason-leung-Xaanw0s0pMk-unsplash_background.jpg" class="gallery_img" alt="placeholder image">
+        <a class="gallery_img" href="https://github.com/JemiOlan/starter_weather_app"> <img src="images/weatherapp.JPG" class="gallery_img" alt="placeholder image"></a>
         <div class="middle">
             <div class="text"> Project two </div>  
          </div>
         </div>
 
     <div class="gallery-item">
-            <img src="images/jason-leung-Xaanw0s0pMk-unsplash_background.jpg" class="gallery_img" alt="placeholder image">
-            <div class="middle">
+        <a class="gallery_img" href="https://github.com/JemiOlan/randomQuoteGenerator"> <img src="images/randomQuote.JPG" class="gallery_img" alt="placeholder image"></a>            
+        <div class="middle">
                 <div class="text"> Project three </div>
             </div>
         </div>
@@ -77,135 +78,18 @@
         </div>
     </div>
 </div>
+<!--footer, idea from Jim kulakowski.. codepen and also similar to my index.html-->
  <footer class="footer">
         
             Copyright.  2019-2022. Jemima Olanrewaju. 
             All rights reserved.
             
-            <a class="btn btn-lg-clear-light soft-transition"href="https://twitter.com/jemmyztoby" role="button"target="_blank"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-            <a class="btn btn-lg-clear-light soft-transition"href="https://github.com/JemiOlan"role="button"target="_blank"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a>
-            <a class="btn btn-lg-clear-light soft-transition"href="https://www.linkedin.com/in/jemima-olanrewaju-461047189/"role="button"target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
-    
+            <a class="btn btn-lg-clear-light soft-transition" href="https://twitter.com/jemmyztoby" role="button" target="_blank"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            <a class="btn btn-lg-clear-light soft-transition" href="https://github.com/JemiOlan" role="button" target="_blank"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a>
+            <a class="btn btn-lg-clear-light soft-transition" href="https://www.linkedin.com/in/jemima-olanrewaju-461047189/" role="button" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a class="btn btn-lg-clear-light soft-transition" href="https://stackoverflow.com/users/13923231/jemima-olanrewaju" role="button" target="_blank"><i class="fab fa-stack-overflow fa-2x" aria-hidden="true"></i></a>
 </footer>   
 </body>
-
-    <!--footer, idea from Jim kulakowski.. codepen and also similar to my index.html-->
+</html>
 
     
-
-
-
-    <!--
-
-        * {
-    margin:0;
-    padding:0;
-    }
-
-.portfolio-header {
-    text-align: center;
-    display: block;
-    color: rgb(14, 13, 13);
-}
-
-/*the s[acing and border used in this code as container for furture purposes*/
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0,0, 0.1);
-}
-
-/*space | gap between each boxes*/
-.container {
-    width: 960px;
-    margin: 3rem auto; 
-    padding-top: 2em auto;
-
-  }
-  /*gallery-img and .gallery items, text, help was gotten from both class challenge and https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/*/
-  .gallery-item {
-      border-radius: 5px;
-      box-shadow: 0 5px 20px rgba(0, 0,0, 0.5);
-      transition: all .3s;
-      overflow: hidden;
-      position: relative;
-      max-width: 100%;
-  }
-/*grid arrangement for each box*/
- .gallery {
-  /* display: grid;
- grid-template-columns: repeat (auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat (6, 5vw);
-  grid-auto-rows: minmax(150px, auto); grid-gap: 15px;*/
-  width: 100%;
-  display: float;
-  margin-top: 2em;
-
-}
-
-.gallery_img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-     opacity: 0.75;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: visible;
-    flex-direction: column;
-    margin: 2%;
-   float: left;
-}
-
-.middle {
-    transition: .3 ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50, -50);
-    text-align: center;
-    -ms-transform: translate(-50%, -50%);
-
-    }
-    /*hovering effect on each boxes*/
-    .gallery-item:hover .gallery_img {
-        filter: grayscale(1);
-        -webkit-filter: grayscale(1);
-    }
-    
-    .gallery-item:hover .middle {
-        opacity: 1;
-       
-    }
-    
-    .gallery-item:hover {
-        box-shadow: 0 10px 20px rgba(92, 26, 26, 0.8);
-    }
-    /*this is used to display the hidden text on the box which will be displayed
-when hovering at the boxes*/
-    .text {
-        color: white;
-        font-size: 1.5em;
-        padding: 16px 32px;
-    }
-
-       
-       @media (max-width: 900px){
-        .gallery_img{
-         width: 45%;
-         margin: 1em;
-        }
-         .gallery{
-           padding: 10vh 1vh;
-         }
-       }
-       
-       @media (max-width: 600px){
-        .gallery_img {
-         width: 50%;
-        }
-       }
-
-
-    -->

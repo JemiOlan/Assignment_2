@@ -33,3 +33,5 @@ part of the html errors
 i left the error because i wanted 100 as its shows absoluty to the webpage and avoiding unnecessary problems
 ![validation of html](images/csserror.jpg)
 
+github resipotries
+![validation of html](images/githubresi.jpg)
